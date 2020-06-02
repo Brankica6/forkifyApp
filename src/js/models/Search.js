@@ -11,7 +11,7 @@ export default class Search {
   // const key = 'fc4bbfe15ad47031f58d8127523a94ab';
 
     try {
-      const res = await axios(`${proxy}www.food2fork.com/api/search?key=${key}&q=${this.query}`);
+      const res = await axios(`https://forkify-api.herokuapp.com/api/search?key=${key}&q=${this.query}`);
       this.result = res.data.recipes;
     } catch(error) {
       alert(error);

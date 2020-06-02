@@ -33,7 +33,7 @@ const controlSearch = async () => {
        try {
             // 4) Search for recipes
             await state.search.getResults();
-            console.log(state.search.result);
+           // console.log(state.search.result);
 
             // 5) Render results on UI
             clearLoader();
